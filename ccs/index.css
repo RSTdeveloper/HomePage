@@ -1,0 +1,202 @@
+.divRST{
+  width: 80%;
+    margin: 0 0 0 10%;
+    text-align: center;
+    font-weight: normal !important;
+}
+
+.divMV{
+  padding: 2rem;
+  text-align: center;
+  background: #49505738;
+}
+
+.buttonPolitic{
+  border: 1px solid gray;
+  border-radius: 2rem;
+  width: 49%;
+  background-color: #4caf5000;
+  font-size: medium;
+}
+/* Efecto hover */
+.buttonPolitic:hover {
+  transform: scale(1.051); /* Aumenta el tamaño */
+  font-weight: bold;
+  border: 2px solid rgb(255, 187, 0);
+  /* background-color: #3b3b3b7b; */
+  background-color: orange;
+  border-color: rgb(255, 187, 0); /* Cambia el color del borde */
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.colorButtonback{
+  background-color: gray;
+  color: black;
+  border-color: gray;
+}
+
+.carousel-inner{
+  height: 50vh;
+  position:relative;
+  width:100%;
+  overflow:hidden
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 10vh;
+  left: 10%;
+  /* padding-top: 19.25rem; */
+  padding-bottom: 6.25rem;
+  color: #fff;
+  text-align: -webkit-match-parent;
+}
+
+.btnContact {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #6c757d;
+  --bs-btn-border-color: #495057;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #343a40;
+  --bs-btn-hover-border-color: #212529;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #0a58ca;
+  --bs-btn-active-border-color: #0a53be;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #0d6efd;
+  --bs-btn-disabled-border-color: #0d6efd;
+}
+.btnContact:hover {
+  transform: scale(1.051); /* Aumenta el tamaño */
+  font-weight: bold;
+  border: 2px solid rgb(255, 187, 0);
+  /* background-color: #3b3b3b7b; */
+  background-color: orange;
+  border-color: rgb(255, 187, 0); /* Cambia el color del borde */
+}
+
+.btn {
+  --bs-btn-padding-x: 0.5rem;
+  --bs-btn-padding-y: 0;
+  --bs-btn-font-family: ;
+  --bs-btn-font-size: 1rem;
+  --bs-btn-font-weight: 600;
+  --bs-btn-line-height: 1.5;
+  /* --bs-btn-color: var(--bs-body-color); */
+  /* --bs-btn-bg: transparent; */
+  --bs-btn-border-width: var(--bs-border-width);
+  /* --bs-btn-border-color: transparent; */
+  --bs-btn-border-radius: var(--bs-border-radius);
+  /* --bs-btn-hover-border-color: transparent; */
+  /* --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075); */
+  --bs-btn-disabled-opacity: 0.65;
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
+  display: inline-block;
+  padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+  font-family: var(--bs-btn-font-family);
+  font-size: var(--bs-btn-font-size);
+  font-weight: var(--bs-btn-font-weight);
+  line-height: var(--bs-btn-line-height);
+  color: var(--bs-btn-color);
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+  border-radius: var(--bs-btn-border-radius);
+  background-color: var(--bs-btn-bg);
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .b-example-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .btn-bd-primary {
+    --bd-violet-bg: gray;
+    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: #727272;
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #7a7a7a;
+    --bs-btn-hover-border-color: #363636;
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #4d4d4d;
+    --bs-btn-active-border-color: #363636;
+  }
+
+  .bd-mode-toggle {
+    z-index: 1500;
+  }
+
+  .bd-mode-toggle .dropdown-menu .active .bi {
+    display: block !important;
+  }
+
+  .divRST{
+    width: 96%;
+      margin: 0 0 0 2%;
+      text-align: center;
+  }
+
+  .divMV{
+    padding: 0.5rem;
+    text-align: center;
+  }
