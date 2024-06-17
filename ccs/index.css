@@ -1,8 +1,48 @@
+body{
+  background: rgb(238, 238, 238);
+  color: gray;
+}
+
+.font-nav{
+  font-weight: 500;
+  font-size: larger;
+}
+
+.img-logo{
+  width: 7.8rem;
+  margin: 0 3rem 0 1rem;
+  height: 4rem;
+}
+
+.container-footer{
+  display: flex;
+  justify-content: space-around;
+}
+
+.img-logo-poli{
+  width: 7.8rem;
+  margin: 0 2rem 0 2rem;
+  height: 4rem;
+  opacity: 0.3;
+}
+
+.img-logo-foot{
+  width: 7.8rem;
+  margin: 0 2rem 0 2rem;
+  height: 4rem;
+  opacity: 0.3;
+}
+
 .divRST{
   width: 80%;
     margin: 0 0 0 10%;
     text-align: center;
     font-weight: normal !important;
+}
+
+.activo{
+  text-decoration: underline !important;
+  font-weight: 700 !important;
 }
 
 .divMV{
@@ -11,21 +51,30 @@
   background: #49505738;
 }
 
+.div-politica{
+  display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin: 2rem 0rem 0rem 0rem;
+}
+
 .buttonPolitic{
   border: 1px solid gray;
   border-radius: 2rem;
-  width: 49%;
-  background-color: #4caf5000;
+  width: 28%;
+  background-color: grey;
   font-size: medium;
+  margin: 0 0.5rem 0 0;
 }
 /* Efecto hover */
 .buttonPolitic:hover {
   transform: scale(1.051); /* Aumenta el tamaño */
   font-weight: bold;
-  border: 2px solid rgb(255, 187, 0);
+  border: 2px solid #fdc303;
   /* background-color: #3b3b3b7b; */
   background-color: orange;
-  border-color: rgb(255, 187, 0); /* Cambia el color del borde */
+  border-color: gray; /* Cambia el color del borde */
 }
 
 .bd-placeholder-img {
@@ -121,82 +170,189 @@
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+.imput-form{
+  display: block; 
+    width: 100%; 
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: wheat;
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+}
+.mapa-one{
+  background-color: rgba(255, 166, 0, 0.356);
+  padding: 1rem; 
+  border-radius: 5vh;
+}
+
+.mapa-two{
+  background-color: rgba(255, 166, 0, 0.678);
+  padding: 1rem; 
+  border-radius: 5vh;
+}
+
+.text-nav{
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: inherit;
+  font-weight: var(--bs-nav-link-font-weight);
+  color: white;
+  padding: 0.8rem;
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.btn-send{
+  background-color: #ffffff00 !important;
+}
+/*  ------------   WHATSAPP  ----------------------------------  */
+.whatsapp-icon {
+  position: fixed;
+    bottom: 4rem;
+    right: 1rem;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    padding: 1px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: transform 0.3s;
+    font-size: xx-large;
+    width: 3rem;
+    display: flex;
+    height: 3rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.1);
+  font-size: xx-large;
+}
+
+.b-example-divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.btn-bd-primary {
+  --bd-violet-bg: gray;
+  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-violet-bg);
+  --bs-btn-border-color: #727272;
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #7a7a7a;
+  --bs-btn-hover-border-color: #363636;
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #4d4d4d;
+  --bs-btn-active-border-color: #363636;
+}
+
+.bd-mode-toggle {
+  z-index: 1500;
+}
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+  display: block !important;
+}
+
+.divRST{
+  width: 96%;
+    margin: 0 0 0 2%;
+    text-align: center;
+}
+
+.divMV{
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.icon-index{
+  background-color: #fdc303; 
+  border-radius: 6rem;
+  width: 6rem; 
+  height: 6rem;
+}
+
+.color-formulario{
+  background-color: orange;
+  color: black;
+}
+
+.mis-vis{
+  margin: 0 1% 0 0 !important; 
+  width: 48%;
+}
+/*  ------------   WHATSAPP  ----------------------------------  */
+
   @media (min-width: 768px) {
     .bd-placeholder-img-lg {
       font-size: 3.5rem;
     }
   }
 
-  .b-example-divider {
-    width: 100%;
-    height: 3rem;
-    background-color: rgba(0, 0, 0, .1);
-    border: solid rgba(0, 0, 0, .15);
-    border-width: 1px 0;
-    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  @media (max-width: 768px) {
+    .img-logo-poli{
+      display: none;
+    }
+
+    .buttonPolitic{
+      width: 50%;
+    }
+
+    .mis-vis{
+      margin: 5px 1% 0 0 !important; 
+      width: 97%;
+    }
   }
 
-  .b-example-vr {
-    flex-shrink: 0;
-    width: 1.5rem;
-    height: 100vh;
-  }
-
-  .bi {
-    vertical-align: -.125em;
-    fill: currentColor;
-  }
-
-  .nav-scroller {
-    position: relative;
-    z-index: 2;
-    height: 2.75rem;
-    overflow-y: hidden;
-  }
-
-  .nav-scroller .nav {
-    display: flex;
-    flex-wrap: nowrap;
-    padding-bottom: 1rem;
-    margin-top: -1px;
-    overflow-x: auto;
-    text-align: center;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .btn-bd-primary {
-    --bd-violet-bg: gray;
-    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-    --bs-btn-font-weight: 600;
-    --bs-btn-color: var(--bs-white);
-    --bs-btn-bg: var(--bd-violet-bg);
-    --bs-btn-border-color: #727272;
-    --bs-btn-hover-color: var(--bs-white);
-    --bs-btn-hover-bg: #7a7a7a;
-    --bs-btn-hover-border-color: #363636;
-    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-    --bs-btn-active-color: var(--bs-btn-hover-color);
-    --bs-btn-active-bg: #4d4d4d;
-    --bs-btn-active-border-color: #363636;
-  }
-
-  .bd-mode-toggle {
-    z-index: 1500;
-  }
-
-  .bd-mode-toggle .dropdown-menu .active .bi {
-    display: block !important;
-  }
-
-  .divRST{
-    width: 96%;
-      margin: 0 0 0 2%;
-      text-align: center;
-  }
-
-  .divMV{
-    padding: 0.5rem;
-    text-align: center;
-  }
+  

@@ -27,103 +27,39 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/color-modes.js"></script>
   <script src="js/index.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 
 <body>
-  <svg class="d-none">
-    <symbol id="check2" viewBox="0 0 16 16">
-      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
-    </symbol>
-    <symbol id="circle-half" viewBox="0 0 16 16">
-      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
-    </symbol>
-    <symbol id="moon-stars-fill" viewBox="0 0 16 16">
-      <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
-      <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
-    </symbol>
-    <symbol id="sun-fill" viewBox="0 0 16 16">
-      <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
-    </symbol>
-  </svg>
-
-  <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
-      aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
-      <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
-        <use href="#circle-half"></use>
-      </svg>
-      <span class="visually-hidden" id="bd-theme-text"></span>
-    </button>
-    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-      <li>
-        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
-          aria-pressed="false">
-          <svg class="bi me-2 opacity-50" width="1em" height="1em">
-            <use href="#sun-fill"></use>
-          </svg>
-          Light
-          <svg class="bi ms-auto d-none" width="1em" height="1em">
-            <use href="#check2"></use>
-          </svg>
-        </button>
-      </li>
-      <li>
-        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
-          aria-pressed="false">
-          <svg class="bi me-2 opacity-50" width="1em" height="1em">
-            <use href="#moon-stars-fill"></use>
-          </svg>
-          Dark
-          <svg class="bi ms-auto d-none" width="1em" height="1em">
-            <use href="#check2"></use>
-          </svg>
-        </button>
-      </li>
-      <li>
-        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
-          aria-pressed="true">
-          <svg class="bi me-2 opacity-50" width="1em" height="1em">
-            <use href="#circle-half"></use>
-          </svg>
-          Auto
-          <svg class="bi ms-auto d-none" width="1em" height="1em">
-            <use href="#check2"></use>
-          </svg>
-        </button>
-      </li>
-    </ul>
-  </div>
-
-
-  <header data-bs-theme="dark">
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <header data-bs-theme="dark " class="font-nav">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: rgb(0, 0, 0);">
       <div class="container-fluid">
-        <!-- <a class="navbar-brand" href="#">RST</a> -->
-        <img src="img/LogoSinFondoRST-1.png" alt="Descripción de la imagen" style="width: 5rem;" href="./index.html">
+        <img class="img-logo" src="img/logoLetraBlack.jpg" alt="Descripción de la imagen " href="./index.html">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
           aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0" >
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="./index.html">Inicio</a>
+              <a class="text-nav" aria-current="page" href="./index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./quienesSomos.html">Quienes somos</a>
+              <a class="text-nav activo" aria-current="page" href="./quienesSomos.html">Quienes somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./service.html">Servicios</a>
+              <a class="text-nav" href="./service.html">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contacto</a>
+              <a class="text-nav " href="./contact.html">Contacto</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
-
 
   <main>
 
@@ -180,9 +116,8 @@
       </button>
     </div>
 
-
     <div class="px-3 divRST">
-      <h1 style="width: 100%;">RST ASOCIADOS</h1>
+      <h1 style="width: 100%; text-align: center; color: rgb(46, 46, 46);">RST ASOCIADOS</h1>
       <p class="lead" style="font-weight: 375;">Somos una empresa con más de 10 años de experiencia que ofrece servicios de 
         Contact Center y Asesoría Jurídica Especializada. Nos destacamos por nuestro dinámico proceso 
         de crecimiento y desarrollo, contando con un equipo multidisciplinario de profesionales calificados 
@@ -190,20 +125,20 @@
         objetivo es la satisfacción del cliente en todas nuestras líneas de negocio.</p>
     </div>
 
-    <div class="row align-items-md-stretch" style="width: 96%;margin: 0px 0 0 2.5%;">
-      <div class="col-md-6">
-        <div class="h-100 border rounded-3 divMV">
-          <h2 style="text-align: center;">Misión</h2>
-          <p class="lead" style="font-weight: 375;">Satisfacer las necesidades de servicios integrales de los clientes, con el fin de que mantengan su 
+    <div class="row align-items-md-stretch" style="width: 100%;margin: 0px 0 0 1.5%;">
+      <div class="col-md-6  mapa-two mis-vis">
+        <div class="h-100 border mapa-two divMV  mapa-one" >
+          <h2 style="text-align: center; color: rgb(46, 46, 46);">Misión</h2>
+          <p class="lead" style="font-weight: 375; color: rgb(75, 75, 75);">Satisfacer las necesidades de servicios integrales de los clientes, con el fin de que mantengan su 
             preferencia por la compañía y para asegurar la rentabilidad de los socios, así como la oportunidad de 
             crecimiento tanto para la empresa como para sus miembros.</p>
           <!-- <button class="btn btn-outline-light" type="button">Example button</button> -->
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="h-100 border rounded-3 divMV">
-          <h2 style="text-align: center;">Visión</h2>
-          <p class="lead" style="font-weight: 375;">Ser percibidos en el 2025 como una organización colombiana con presencia nacional e internacional 
+      <div class="col-md-6 mapa-two mis-vis">
+        <div class="h-100 border mapa-two divMV  mapa-one" >
+          <h2 style="text-align: center; color: rgb(46, 46, 46);">Visión</h2>
+          <p class="lead" style="font-weight: 375;  color: rgb(75, 75, 75);">Ser percibidos en el 2025 como una organización colombiana con presencia nacional e internacional 
             que obtiene los mejores resultados en términos de rentabilidad, oportunidad y efectividad en las 
             diferentes líneas de negocio de la compañía. </p>
           <!-- <button class="btn btn-outline-secondary" type="button">Example button</button> -->
@@ -212,12 +147,20 @@
     </div>   
 
     <hr class="featurette-divider">
+
+    <a href="https://wa.me/+573222496627" class="whatsapp-icon" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
     <!-- FOOTER -->
-    <footer class="container">
-      <!-- <p class="float-end"><a href="#">Back to top</a></p> -->
-      <p>PBX: +601 9180404, +601 7446565 | Email: info@rstasociados.com.co</p>
-      <p>Autopista Norte #122-35, Edificio Mezco, Oficina 302 Bogotá D.C. - Colombia​</p>
-      <!-- <p>&copy; 2017–2024 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p> -->
+    <footer class="container-footer">
+      <div>
+        <p>PBX: +601 9180404, +601 7446565 | Email: info@rstasociados.com.co</p>
+        <p>Autopista Norte #122-35, Edificio Mezco, Oficina 302 Bogotá D.C. - Colombia​</p>  
+      </div>
+      <div>
+        <img class="img-logo-poli" src="img/logoLetra-remove.png" alt="Descripción de la imagen " href="./index.html">
+      </div>
     </footer>
   </main>
 
